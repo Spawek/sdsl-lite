@@ -11,7 +11,7 @@ endif()
 
 set( sdsl_SRCS ${libFiles} ${headerFiles})
 
-add_library( sdsl ${sdsl_SRCS} )
+add_library( sdsl SHARED ${sdsl_SRCS} )
 
 install(TARGETS sdsl
         RUNTIME DESTINATION bin
